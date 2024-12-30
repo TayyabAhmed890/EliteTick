@@ -1,15 +1,12 @@
 import React from "react";
 import { productData } from "./data/products";
 import Link from "next/link";
-import { Poppins,Montserrat } from 'next/font/google';
-const Pop: any = Poppins({
+import { Poppins } from 'next/font/google';
+const Pop = Poppins({
   subsets: ['latin'],
   weight: ['200', '300', '400'],
 });
-const Mont = Montserrat({
-  subsets: ["latin"],
-  weight: ["900"]
-})
+
 
 const Products = () => {
   return (

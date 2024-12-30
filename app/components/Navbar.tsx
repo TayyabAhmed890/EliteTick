@@ -14,7 +14,7 @@ import Link from 'next/link'
 
 
 import { Poppins } from 'next/font/google';
-const Pop: any = Poppins({
+const Pop = Poppins({
   subsets: ['latin'],
   weight: ['200', '300', '400'],
 });
