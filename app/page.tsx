@@ -1,5 +1,4 @@
 
-
 import Clients from "./components/Clients";
 import Company from "./components/Company";
 import Featured from "./components/Featured";
@@ -12,6 +11,7 @@ export default function Home() {
     <Featured/>
     <Clients/>
     <Company/>
+
     </>
   );
 }

@@ -35,7 +35,7 @@ const Products = () => {
                     <h2 className="text-gray-900 title-font text-lg font-medium">
                       {product.name}
                     </h2>
-                    <p className="mt-1">${product.price}</p>
+                    <p className="mt-1">{product.price}</p>
                   </div>
                 </div>
               </div>
