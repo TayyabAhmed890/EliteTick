@@ -31,7 +31,12 @@ export default function Navbar() {
             <h1 className={`${Pop.className} font-bold text-2xl` }>EliteTick</h1>
           </Link>
         </div>
-        <div className="flex lg:hidden">
+        <div className="flex items-center lg:hidden">
+        <div className='ml-7 px-3'>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6">
+  <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+</svg>
+</div>
           <button
             type="button"
             onClick={() => setMobileMenuOpen(true)}
@@ -69,12 +74,13 @@ export default function Navbar() {
         
       </nav>
       
-      <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className="lg:hidden">
+      <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className="lg:hidden ">
+        
     
         <div className="fixed inset-0 z-10" />
         <DialogPanel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
-        
           <div className="flex items-center justify-between">
+            
             
             <Link href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
@@ -90,6 +96,7 @@ export default function Navbar() {
             </button>
             
           </div>
+          
           <div className="mt-6 flow-root">
             <div className="-my-6 divide-y divide-gray-500/10">
             
@@ -119,17 +126,11 @@ export default function Navbar() {
                   Contact
                 </Link>
                 
+              
               </div>
               
-              {/* <div className="py-6">
-                <Link
-                  href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
-                >
-                  Log in
-                </Link>
-              </div> */}
               
+            
             </div>
           </div>
         </DialogPanel>
